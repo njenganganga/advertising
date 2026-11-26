@@ -1,43 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> SMART HOME DEVICES </title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4efe5">
+  <meta name="description" content="Thoughtful smart home devices for calmer, safer, more connected living. Explore the PromoVista collection.">
+  <title>PromoVista — A more considered home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{cream:'#f4efe5',ink:'#171713',ember:'#bd4b2d',sand:'#e8dfd0'},fontFamily:{sans:['DM Sans','sans-serif'],serif:['Cormorant Garamond','Georgia','serif']}}}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js" defer></script>
+  <script src="site.js" defer></script>
 </head>
-<body>
-    <nav>
-        <div class="container nav_container">
-            <a href="index.html"><h4> PromoVista </h4></a>
-            <ul class="nav_menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="more.html">More</a></li>
-            </ul>
-
-        </div>
-    </nav>
-
-    <header>
-        <div class="container header_container">
-            <div class="header_left">
-                <h1>  WELCOME TO PROMOVISA: Elevating Your Lifestyle with Smart Homes! </h1>
-                <p> At Promovisa, we believe in transforming houses into intelligent, responsive, and secure homes. Step into the future of living with our curated selection of cutting-edge smart home devices and technologies. As pioneers in the realm of home automation, we bring you a world where your home isn't just a place; it's a seamless extension of your lifestyle, effortlessly adapting to your needs.</p>
-                 <a href="catalog.html" class="btn btn-primary"> Get started </a>
-
-            </div>
-            <div class="header_right">
-                <div class="header_right image">
-                    <img src="images/smart home.jpg">
-                </div>
-            </div>
-        </div>
-    </header>
-
-
-
+<body class="bg-cream text-ink antialiased">
+  <div class="announcement">A better everyday starts at home <span>—</span> Discover the PromoVista edit <a href="catalog.html">Explore the collection ↗</a></div>
+  <header class="site-header"><nav class="shell nav-wrap" aria-label="Main navigation">
+    <a class="wordmark" href="index.html"><span class="brand-symbol">P</span><span>promo<span class="wordmark-light">vista</span></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <div class="nav-links"><a class="active" href="index.html">Home</a><a href="catalog.html">Catalog</a><a href="shop.html">Shop</a><a href="more.html">Our story</a></div>
+    <a class="nav-cta" href="shop.html">Find your fit <span>↗</span></a>
+  </nav></header>
+  <main>
+    <section class="hero shell">
+      <div class="hero-copy reveal"><p class="kicker"><span></span> Smart living, thoughtfully chosen</p><h1>A home that<br>just <em>gets you.</em></h1><p class="hero-intro">Make room for more of what matters. Discover considered technology that brings comfort, calm, and a little more ease to every day.</p><div class="hero-actions"><a class="button button-ember" href="catalog.html">Explore the collection <span>↗</span></a><a class="text-link" href="#featured">See what’s possible <span>↓</span></a></div><div class="hero-proof"><div class="proof-avatars"><span>✦</span><span>⌂</span><span>♡</span></div><p>Small upgrades. <strong>Everyday delight.</strong></p></div></div>
+      <div class="hero-visual reveal"><img src="smart%20home.jpg" alt="A welcoming, connected smart home" fetchpriority="high"><div class="image-wash"></div><div class="hero-image-caption"><span class="caption-kicker">THE HOME, REIMAGINED</span><span>Comfort comes naturally. <b>01 — 04</b></span></div><div class="hero-note"><span class="note-icon">⌂</span><span><b>One thoughtful touch</b><small>Everything in its right place</small></span></div><div class="hero-stamp">LIVE<br>LIGHTLY</div></div>
+    </section>
+    <section class="benefit-strip"><div class="shell benefit-grid"><div><span>01</span><p>Thoughtful technology</p></div><div><span>02</span><p>Comfort in every corner</p></div><div><span>03</span><p>Control that feels simple</p></div><div><span>04</span><p>Made for real life</p></div></div></section>
+    <section class="section shell" id="featured"><div class="section-heading"><div><p class="kicker"><span></span> A few things we love</p><h2>Small details.<br><em>Big difference.</em></h2></div><div class="heading-side"><p>Meet the clever companions that make home feel more like yours.</p><a class="text-link" href="catalog.html">View all devices <span>↗</span></a></div></div>
+      <div class="carousel-frame" data-carousel><div class="carousel-controls"><button data-prev aria-label="Previous products">←</button><button data-next aria-label="Next products">→</button></div><div class="product-carousel" data-track>
+        <a class="feature-card" href="catalog.html#home-hub"><div class="feature-photo"><img src="Home%20hub.jpg" alt="Smart home hub"><span class="card-number">01 / CONNECT</span></div><div class="feature-info"><div><h3>The home hub</h3><p>Your home, in harmony.</p></div><span class="round-arrow">↗</span></div></a>
+        <a class="feature-card" href="catalog.html#lighting"><div class="feature-photo"><img src="lighting%20system.jpg" alt="Smart lighting system"><span class="card-number">02 / SET THE MOOD</span></div><div class="feature-info"><div><h3>Light, your way</h3><p>Find your evening glow.</p></div><span class="round-arrow">↗</span></div></a>
+        <a class="feature-card" href="catalog.html#security"><div class="feature-photo"><img src="security%20camera.jpg" alt="Smart home security camera"><span class="card-number">03 / FEEL AT EASE</span></div><div class="feature-info"><div><h3>A little more peace</h3><p>Feel at home, anywhere.</p></div><span class="round-arrow">↗</span></div></a>
+        <a class="feature-card" href="catalog.html#comfort"><div class="feature-photo"><img src="smart%20blinds.jpg" alt="Automated smart blinds"><span class="card-number">04 / FIND YOUR FLOW</span></div><div class="feature-info"><div><h3>Morning, made easy</h3><p>Let the sunshine in.</p></div><span class="round-arrow">↗</span></div></a>
+      </div><div class="carousel-progress"><span data-progress></span></div></div>
+    </section>
+    <section class="manifesto"><div class="shell manifesto-inner"><p class="kicker"><span></span> The PromoVista point of view</p><h2>Technology should<br>feel like <em>coming home.</em></h2><a class="button button-outline" href="more.html">Get to know us <span>↗</span></a><span class="manifesto-orbit" aria-hidden="true">⌂</span></div></section>
+    <section class="section shell room-section"><div class="section-heading"><div><p class="kicker"><span></span> Start with a space</p><h2>Make every room<br><em>feel like yours.</em></h2></div><p class="heading-side room-intro">From the first hello at the door to a softer end to the day—find the little upgrades that work beautifully together.</p></div><div class="room-grid"><a href="catalog.html#security" class="room-card room-entry"><img src="doorbell.jpg" alt="Smart video doorbell"><span>01 / THE ENTRY</span><h3>A warmer welcome</h3><b>Explore entryway devices ↗</b></a><a href="catalog.html#lighting" class="room-card room-light"><img src="lighting%20system.jpg" alt="Smart ambient lighting"><span>02 / THE LIVING ROOM</span><h3>Settle into your own light</h3><b>Explore lighting ↗</b></a><a href="catalog.html#comfort" class="room-card room-calm"><img src="smart%20blinds.jpg" alt="Smart window blinds"><span>03 / YOUR QUIET CORNER</span><h3>A little more breathing room</h3><b>Explore comfort ↗</b></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-main"><a class="wordmark footer-mark" href="index.html"><span class="brand-symbol">P</span><span>promo<span class="wordmark-light">vista</span></span></a><p>Thoughtful technology for the place you call home.</p><div class="footer-links"><a href="catalog.html">Catalog</a><a href="shop.html">Shop</a><a href="more.html">Our story</a></div></div><div class="shell footer-bottom"><span>© 2025 PromoVista. Made for everyday living.</span><a href="#top">Back to top ↑</a></div></footer>
 </body>
 </html>
